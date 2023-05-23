@@ -1,0 +1,68 @@
+.user__loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: rgb(34, 34, 138);
+  font-size: 4vh;
+}
+.user__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container__user {
+  width: 381px;
+  height: 274px;
+  border: 2px solid rgb(144, 141, 141);
+  padding: 0;
+  margin: 1vh;
+  padding-left: 1vh;
+  border-radius: 5px;
+  color: 1vh solid rgb(0, 0, 0);
+  background-color: rgb(254, 254, 254);
+}
+.container__user:hover {
+  border: 3px solid cornflowerblue;
+}
+.tittle__name__user {
+  font-size: 3vh;
+}
+.edit__container {
+  display: flex;
+  gap: 1vh;
+  justify-content: end;
+  margin: 0;
+  padding: 3vh 1vh 1vh 2vh;
+}
+b {
+  color: rgb(217, 214, 214);
+  display: flex;
+  font-size: 2vh;
+}
+hr {
+  border-color: rgba(255, 254, 254, 0.655);
+}
+.button__delete {
+  width: 6vh;
+  height: 6vh;
+  color: white;
+  background-color: rgb(218, 49, 49);
+  border: none;
+}
+.button__delete:hover {
+  background-color: red;
+  transform: translateY(-0.2vh);
+}
+.button__edit {
+  width: 6vh;
+  height: 6vh;
+  color: rgb(4, 3, 3);
+  background-color: rgb(248, 246, 246);
+  border: 1px solid rgb(98, 94, 94);
+}
+.button__edit:hover {
+  background-color: rgb(146, 146, 146);
+  transform: translateY(-0.2vh);
+}

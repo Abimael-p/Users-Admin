@@ -1,0 +1,50 @@
+.form__users {
+  position: relative;
+  background-color: white;
+  width: 30%;
+  padding: 3vh 6vh 3vh;
+}
+.tittle__form__user {
+  margin: 0;
+  padding: 0 0 2vh;
+  text-align: start;
+  font-size: 5vh;
+}
+.button__closing__form {
+  position: absolute;
+  top: 2vh;
+  right: 4vh;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.container__form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.form__container__users__input {
+  display: flex;
+  flex-direction: column;
+}
+.button__add__user {
+  border: none;
+  background-color: rgba(20, 78, 126);
+  height: 6vh;
+  cursor: pointer;
+  color: white;
+}
+.button__add__user:hover {
+  background-color: #84a5df;
+  color: rgb(247, 247, 247);
+}
+@media screen and (max-width: 874px) {
+  .form__users {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .form__users {
+    width: 80%;
+  }
+}

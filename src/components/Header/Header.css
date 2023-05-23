@@ -1,0 +1,30 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vh;
+}
+.list__tittle__user {
+  font-size: 7vh;
+  color: rgb(20, 78, 126);
+}
+.button_create__user {
+  font-size: 4vh;
+  color: whitesmoke;
+  background-color: rgb(20, 78, 126);
+  border-radius: 1vh;
+  border: none;
+}
+.button_create__user:hover {
+  background-color: rgb(85, 137, 195);
+  transform: translateY(-0.35vh);
+}
+@media screen and (max-width: 539px) {
+  .button_create__user {
+    font-size: 3vh;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
