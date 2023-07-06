@@ -26,6 +26,11 @@
 .container__user:hover {
   border: 3px solid cornflowerblue;
 }
+
+.link_user_id {
+  text-decoration: none;
+}
+
 .tittle__name__user {
   font-size: 3vh;
 }

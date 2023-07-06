@@ -1,0 +1,91 @@
+.btn_back {
+  position: fixed;
+  border: none;
+  background-color: white;
+  width: 6vh;
+}
+
+.form__user__id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_img img {
+  width: 7%;
+
+  border-radius: 50%;
+}
+
+.id_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.id_user b {
+  font-size: 3vh;
+  color: rgb(14, 14, 14);
+}
+
+.container_details_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name_user {
+  display: flex;
+  gap: 2vh;
+}
+
+.container_date_and_email {
+  display: flex;
+  gap: 10vh;
+}
+
+.container_btn_update_user {
+  display: flex;
+  justify-content: center;
+  margin: 6vh;
+}
+
+.container_btn_update_user button {
+  width: 30vh;
+  height: 6vh;
+  font-size: 3vh;
+
+  color: white;
+  border: 1px solid rgb(150, 175, 150);
+  border-radius: 1vh;
+  background-color: rgb(6, 49, 102);
+}
+
+.container_btn_update_user button:hover {
+  background-color: aqua;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 485px) {
+  .container_img img {
+    width: 20%;
+  }
+
+  .name_user {
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .container_date_and_email {
+    flex-direction: column;
+    gap: 1vh;
+  }
+}

@@ -18,6 +18,15 @@ export const updateUser = async (userId, userData) => {
   }
 };
 
+export const getUsersId = async (userId) => {
+  try {
+    const res = await axiosInstance.get(`users/${userId}`);
+    return res.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 export const deleteUser = async (userId) => {
   try {
     await axiosInstance.delete(`users/${userId}/`);

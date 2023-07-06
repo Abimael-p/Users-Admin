@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import "boxicons";
 import "./UsersList.css";
 
 const UsersList = ({ users, onEditUser, onDeleteUser }) => {
@@ -8,7 +10,8 @@ const UsersList = ({ users, onEditUser, onDeleteUser }) => {
       </div>
     );
 
-  const handleDeleteUser = (userId) => {
+  const handleDeleteUser = (event, userId) => {
+    event.preventDefault();
     onDeleteUser(userId);
   };
 
@@ -17,36 +20,36 @@ const UsersList = ({ users, onEditUser, onDeleteUser }) => {
       {users.map((user) => {
         return (
           <div className="container__user" key={user.id}>
-            <p className="tittle__name__user">
-              {user.first_name} {user.last_name}
-            </p>
-            <hr />
-            <p>
-              <b>Email: </b>
-              {user.email}
-            </p>
-            <p>
-              <b>Birthday: </b>
-              <img
-                width="24"
-                height="24"
-                src="https://img.icons8.com/material-outlined/24/gift--v1.png"
-                alt="gift--v1"
-              />
-              {user.birthday}
-            </p>
-            <hr />
-            <div className="edit__container">
-              <button
-                className="button__delete"
-                onClick={() => handleDeleteUser(user.id)}
-              >
-                X
-              </button>
-              <button onClick={() => onEditUser(user)} className="button__edit">
-                📑
-              </button>
-            </div>
+            <Link className="link_user_id" to={`/${user.id}`}>
+              <p className="tittle__name__user">
+                {user.first_name} {user.last_name}
+              </p>
+              <hr />
+              <p>
+                <b>Email: </b>
+                {user.email}
+              </p>
+              <p>
+                <b>Birthday: </b>
+                <box-icon name="gift"></box-icon>
+                {user.birthday.slice(0, 10)}
+              </p>
+              <hr />
+              <div className="edit__container">
+                <button
+                  className="button__delete"
+                  onClick={(event) => handleDeleteUser(event, user.id)}
+                >
+                  <box-icon name="comment-x"></box-icon>
+                </button>
+                <button
+                  onClick={(event) => onEditUser(event, user)}
+                  className="button__edit"
+                >
+                  <box-icon name="edit-alt"></box-icon>
+                </button>
+              </div>
+            </Link>
           </div>
         );
       })}
