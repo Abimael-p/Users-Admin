@@ -20,7 +20,7 @@ const UsersList = ({ users, onEditUser, onDeleteUser }) => {
       {users.map((user) => {
         return (
           <div className="container__user" key={user.id}>
-            <Link className="link_user_id" to={`/${user.id}`}>
+            <Link className="link_user_id" to={`/user/${user.id}`}>
               <p className="tittle__name__user">
                 {user.first_name} {user.last_name}
               </p>
