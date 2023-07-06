@@ -5,6 +5,12 @@
   width: 6vh;
 }
 
+.btn_back:hover {
+  color: rgb(188, 7, 7);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
 .form__user__id {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,7 @@
 .container_btn_update_user button:hover {
   background-color: aqua;
   transform: translateY(-3px);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 485px) {
