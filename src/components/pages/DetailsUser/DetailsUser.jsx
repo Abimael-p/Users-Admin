@@ -11,6 +11,7 @@ const DetailsUser = () => {
   const [user, setUser] = useState({});
   const { register, handleSubmit, watch, setValue } = useForm();
   const birthday = watch("birthday")?.slice(0, 10);
+  
 
   useEffect(() => {
     const loadUsers = async () => {
@@ -29,7 +30,7 @@ const DetailsUser = () => {
   const onSubmit = async (data) => {
     try {
       await updateUser(id, data);
-      history.go(0)
+      window.location.href = '/';
     } catch (error) {
       console.log("Error updating user", error);
     }
