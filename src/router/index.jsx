@@ -17,4 +17,8 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <p>This path does not exist 404 error</p>
+  }
 ]);
