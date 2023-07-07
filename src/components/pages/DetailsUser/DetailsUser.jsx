@@ -29,7 +29,7 @@ const DetailsUser = () => {
   const onSubmit = async (data) => {
     try {
       await updateUser(id, data);
-      window.location.href = "/";
+      window.location.reload();
     } catch (error) {
       console.log("Error updating user", error);
     }

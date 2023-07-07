@@ -1,9 +1,9 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Home from "../components/pages/Home/Home";
 import DetailsUser from "../components/pages/DetailsUser/DetailsUser";
 import App from "../App";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     element: <App />,
     children: [
